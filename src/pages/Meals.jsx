@@ -101,7 +101,7 @@ export default function Meals() {
           return (
             <div
               key={item.id}
-              className="bg-white w-full sm:w-[45%] lg:w-[30%] rounded-xl shadow hover:shadow-md transition overflow-hidden"
+              className="bg-white w-full sm:w-[45%] lg:w-[25%] rounded-xl shadow hover:shadow-md transition overflow-hidden"
             >
               <img
                 loading="lazy"

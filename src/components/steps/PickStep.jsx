@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosArrowForward, IoMdArrowBack } from "react-icons/io";
+import Track from './Track';
 
 export default function PickStep({ onBack }) {
   return (
@@ -14,36 +15,40 @@ export default function PickStep({ onBack }) {
       <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 lg:space-x-4 mt-6">
         {/* Left Section - Summary */}
         <div className="lg:w-[65%] w-full bg-[#f9fafc] p-6 rounded-xl shadow border">
-          <h4 className="text-xl font-semibold text-forest mb-4">Scheduled Pickup</h4>
-          <ul className="text-gray-700 space-y-3">
-            <li>- Date: <span className="font-medium">Wednesday, June 5</span></li>
-            <li>- Time: <span className="font-medium">10:00 AM - 12:00 PM</span></li>
-            <li>- Location: <span className="font-medium">PrepKitchen Hub, Cairo</span></li>
-          </ul>
+        <Track/>
         </div>
 
-        {/* Right Section - Personal Info */}
-        <div className="lg:w-[35%] w-full bg-[#f9fafc] p-6 rounded-xl shadow border">
-          <h4 className="text-xl font-semibold text-forest mb-4">Contact Details</h4>
-          <div className="text-forest space-y-2 text-sm">
-            <p>- Ahmed Talaat</p>
-            <p>- 6th October, Giza, Egypt</p>
-            <p className="flex items-center">
-              - 01112290181
+       {/* Right Section - Contact Summary */}
+        <div className="lg:w-[35%] w-full bg-white p-6 rounded-xl shadow border">
+          <h4 className="text-xl font-semibold text-forest mb-4">Your Information</h4>
+          
+          <div className="text-forest space-y-3 text-sm">
+            <div className="flex items-center space-x-2">
+              <span className="font-medium">Name:</span>
+              <span className='text-gray-600'>Ahmed Talaat</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <span className="font-medium">Location:</span>
+              <span className='text-gray-600'>6th October, Giza, Egypt</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <span className="font-medium">Phone:</span>
+              <span className='text-gray-600'>01112290181</span>
+            </div>
+          </div>
+
+          <div className="mt-6 p-4 bg-beige rounded-lg border text-forest shadow">
+            <h3 className="font-semibold text-lg">Your Selected Plan</h3>
+            <p className="text-sm text-gray-600">
+              High-Protein | 4 meals/day | Muscle Gain
+            </p>
+            <p className="text-sm mt-2 italic text-gray-500">
+              “Fuel your body, feed your goals.”
             </p>
           </div>
-
-          <button type="button" className="w-full mt-6 bg-forest text-beige py-2 rounded-lg font-medium hover:bg-[#2f4834] transition">
-            Update Pickup
-          </button>
-
-          <div className="mt-6 text-forest relative">
-            <h3 className="font-semibold text-lg">View order summary</h3>
-            <p className="text-sm text-gray-600">See your selected meals & plan cost</p>
-            <IoIosArrowForward size={24} className="absolute top-2 right-2 text-forest" />
-          </div>
         </div>
-      </div>
+</div>
+
 
       {/* Back button */}
       <div className="mt-10 flex justify-start">

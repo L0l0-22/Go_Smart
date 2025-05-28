@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Stepper from "../components/Stepper";
 import PlanStep from "../components/steps/PlanStep";
 import MealsStep from "../components/steps/MealsStep";
@@ -8,6 +8,12 @@ import PickStep from "../components/steps/PickStep";
 
 export default function Plan() {
   const [step, setStep] = useState(0); 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  }, [step]);
 
   return (
     <div className='mt-32 mb-10 w-[90%] mx-auto'>
@@ -40,4 +46,3 @@ export default function Plan() {
     </div>
   );
 }
-

@@ -2,7 +2,7 @@ import { FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className=" text-forest py-9 bg-beige">
+    <footer className=" text-forest py-9 bg-beige ">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-xl font-bold">PrepKitchen</div>
         <ul className="flex flex-wrap gap-6 text-forest">

@@ -1,22 +1,30 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
 import Footer from './components/Footer';
+import Home from './pages/Home';
 import Plan from './pages/Plan';
 import Meals from './pages/Meals';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
+
 function App() {
+  const location = useLocation();
+  const hideLayout = location.pathname === "/signup" || location.pathname === "/signin";
+
   return (
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/plan" element={<Plan />} />
-          <Route path="/meals" element={<Meals />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    
+    <>
+      {!hideLayout && <Navbar />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/plan" element={<Plan />} />
+        <Route path="/meals" element={<Meals />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+
+      {!hideLayout && <Footer />}
+    </>
   );
 }
 

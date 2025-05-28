@@ -1,35 +1,45 @@
-import React from 'react'
-import food from "../assets/food.png"
-import upper from "../assets/upperArrow.png"
-import lower from "../assets/lowerArrow.png"
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { motion } from 'framer-motion';
+import food from "../assets/food.png";
+import upper from "../assets/upperArrow.png";
+import lower from "../assets/lowerArrow.png";
 
 export default function Food() {
+  const items = [
+    "Nutritionally balanced with always fresh carbs and veg",
+    "Avg. 40g portions of protein per meal, ethically farmed in the UK",
+    "Bold, tasty, never-bland flavours with tons of variety",
+    "Always ready in 3 minutes or less with zero prep, shopping or cooking",
+  ];
+
   return (
     <div className="relative bg-cover bg-center overflow-hidden pb-20 lg:pb-0 lg:min-h-screen">
       <div className="container mx-auto flex flex-col md:flex-row mt-10 px-4 md:px-0 relative">
-        {/* Food Image Section */}
-        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex items-center">
           <img src={food} className="max-w-full h-auto lg:h-[70vh] relative z-10" />
-
-          {/* Arrows */}
           <img src={upper} className="hidden lg:block absolute top-[10%] left-[65%] lg:w-64 h-36 z-20 -rotate-6" />
           <img src={upper} className="hidden lg:block absolute top-[30%] left-[75%] lg:w-48 h-36 z-20" />
           <img src={lower} className="hidden lg:block absolute top-[55%] left-[75%] lg:w-48 h-36 z-20" />
           <img src={lower} className="hidden lg:block absolute top-[73%] left-[65%] lg:w-72 h-36 z-20 rotate-12" />
         </div>
-
-        {/* Text Section */}
         <div className="w-full lg:w-1/2 mt-10 lg:mt-20 z-30 px-4 lg:px-0">
           <ul className="text-base md:text-2xl lg:text-3xl font-semibold leading-relaxed text-green-950 space-y-4 md:space-y-10">
-            <li>Nutritionally balanced with always fresh carbs and veg</li>
-            <li>Avg. 40g portions of protein per meal, ethically farmed in the UK</li>
-            <li>Bold, tasty, never-bland flavours with tons of variety</li>
-            <li>Always ready in 3 minutes or less with zero prep, shopping or cooking</li>
+            {items.map((text, i) => (
+             <motion.li
+              key={i}
+              custom={i}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.5 }} // animate every time 50% is visible
+              transition={{ delay: i * 0.3, type: 'spring', stiffness: 50 }}
+            >
+              {text}
+            </motion.li>
+            ))}
           </ul>
         </div>
       </div>
-
-      {/* Bottom Wave */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

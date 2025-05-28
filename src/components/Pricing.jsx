@@ -15,13 +15,11 @@ export default function Pricing() {
             <div className="text-4xl font-bold text-forest mb-6">
             $49<span className="text-base font-medium">/mo</span>
             </div>
-
             <ul className="space-y-3 mb-6 text-left text-gray-700">
             <li className="flex items-center"><FiCheckCircle className="text-green-600 mr-2" /> 10 calorie-controlled meals/week</li>
             <li className="flex items-center"><FiCheckCircle className="text-green-600 mr-2" /> Low-carb & nutrient-dense</li>
             <li className="flex items-center"><FiCheckCircle className="text-green-600 mr-2" /> Designed for fat loss phases</li>
             </ul>
-
             <NavLink
             to="/plan"
             className="bg-forest text-beige px-6 py-2 rounded-full hover:bg-Darkgreen transition">Choose Plan

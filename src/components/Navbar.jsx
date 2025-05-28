@@ -73,7 +73,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/support"
+              to="/signup"
               className={({ isActive }) =>
                 `block py-1 lg:py-0 transition-colors duration-200 ${
                   isActive
@@ -84,7 +84,7 @@ const Navbar = () => {
 
               onClick={() => setMenuOpen(false)}
             >
-              Support
+              Sign Up
             </NavLink>
           </li>
             <div className="lg:hidden flex gap-4">

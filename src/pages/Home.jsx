@@ -38,7 +38,7 @@ export default function Home() {
       <BenefitsSection/>
       <Pricing/>
      <div className="relative bg-beige">
-      <div className="h-32 md:h-40 lg:h-48 w-full -mb-1"></div>
+      <div className="h-32 md:h-40 lg:h-72 w-full -mb-1"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

@@ -20,7 +20,7 @@ export default function Works() {
             <img
               src={step1}
               alt="Step 1"
-              className="w-32 h-32 rounded-full object-cover"
+              className="w-32 h-32 rounded-full object-cover transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
             <span className="absolute -top-2 -right-2 bg-Darkgreen text-white text-xs w-6 h-6 flex items-center justify-center rounded-full shadow-md font-bold">
               1
@@ -38,7 +38,7 @@ export default function Works() {
             <img
               src={step2}
               alt="Step 2"
-              className="w-32 h-32 rounded-full object-cover"
+              className="w-32 h-32 rounded-full object-cover transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
             <span className="absolute -top-2 -right-2 bg-Darkgreen text-white text-xs w-6 h-6 flex items-center justify-center rounded-full shadow-md font-bold">
               2
@@ -56,7 +56,7 @@ export default function Works() {
             <img
               src={step3}
               alt="Step 3"
-              className="w-32 h-32 rounded-full object-cover"
+              className="w-32 h-32 rounded-full object-cover transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
             <span className="absolute -top-2 -right-2 bg-Darkgreen text-white text-xs w-6 h-6 flex items-center justify-center rounded-full shadow-md font-bold">
               3
@@ -74,7 +74,7 @@ export default function Works() {
             <img
               src={step4}
               alt="Step 4"
-              className="w-32 h-32 rounded-full object-cover"
+              className="w-32 h-32 rounded-full object-cover transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
             <span className="absolute -top-2 -right-2 bg-Darkgreen text-white text-xs w-6 h-6 flex items-center justify-center rounded-full shadow-md font-bold">
               4

@@ -9,7 +9,7 @@ export default function Pricing() {
 
         <div className="flex flex-col md:flex-row justify-center gap-8">
         {/* Weight Loss Plan */}
-        <div className="bg-beige p-8 rounded-2xl shadow-lg text-center w-full md:w-1/3">
+        <div className="bg-beige p-8 rounded-2xl shadow-lg text-center w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2">Weight Loss Plan</h3>
             <p className="text-gray-600 mb-6">For those aiming to burn fat and slim down</p>
             <div className="text-4xl font-bold text-forest mb-6">
@@ -27,7 +27,7 @@ export default function Pricing() {
         </div>
 
         {/* Maintenance Plan - Moved to center */}
-        <div className="bg-peach border-2 border-peach p-8 rounded-2xl shadow-xl text-center w-full md:w-1/3 scale-105">
+        <div className="bg-peach border-2 border-peach p-8 rounded-2xl shadow-xl text-center w-full md:w-1/3 scale-105 transform transition-transform duration-300 hover:scale-110 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2 text-forest">Maintenance Plan</h3>
             <p className="text-gray-600 mb-6">Ideal for staying on track year-round</p>
             <div className="text-4xl font-bold text-forest mb-6">
@@ -47,7 +47,7 @@ export default function Pricing() {
         </div>
 
         {/* Muscle Gain Plan */}
-        <div className="bg-beige p-8 rounded-2xl shadow-lg text-center w-full md:w-1/3">
+        <div className="bg-beige p-8 rounded-2xl shadow-lg text-center w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2">Muscle Gain Plan</h3>
             <p className="text-green-950 mb-6">For building lean mass and strength</p>
             <div className="text-4xl font-bold text-forest mb-6">

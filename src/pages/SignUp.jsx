@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import loginimg from "../assets/login.png";
+import logo from "../assets/logo.png";
 
 export default function SignUp() {
        const navigate = useNavigate(); 
@@ -19,10 +20,13 @@ export default function SignUp() {
       </div>
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 lg:my-0 my-auto">
         <div className="max-w-md w-full">
-            <h5 className="text-4xl text-center font-semibold mb-2 text-forest">
-            Sign Up
+           <Link to="/">
+                <img src={logo} alt="Deit Logo" className="w-72 h-[7.5rem] mb-12 mx-auto" />
+            </Link>
+            <h5 className="text-4xl font-semibold mb-2 text-forest">
+            Login
             </h5>
-            <h5 className="text-gray-600 mb-9 text-center">
+            <h5 className="text-gray-600 mb-9">
             Nice to see you again!
           </h5>
 
@@ -78,7 +82,7 @@ export default function SignUp() {
               <p>
                 Don't have an account?
                 <Link to="/signin" className="text-forest hover:underline ml-1">
-                  Sign In
+                  Register here
                 </Link>
               </p>
             </div>

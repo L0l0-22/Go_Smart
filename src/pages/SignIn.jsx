@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import loginimg from "../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import PhoneInput from 'react-phone-input-2';
+import logo from "../assets/logo.png";
 import 'react-phone-input-2/lib/style.css'; // You can use other themes if you prefer
 export default function SignIn() {
     const [phone, setPhone] = useState('');
@@ -23,13 +24,16 @@ export default function SignIn() {
             {/* Right form section */}
             <div className="w-full lg:w-1/2 flex  justify-center items-center  p-6">
                 <div className="w-full max-w-xl ">
-                    <h5 className="text-4xl text-center font-semibold mb-2 text-forest">
+                    <Link to="/">
+                        <img src={logo} alt="Deit Logo" className="w-72 h-[7.5rem] mb-12 mx-auto" />
+                    </Link>
+                    <h5 className="text-4xl font-semibold mb-2 text-forest">
                         Create Account
                         </h5>
-                    <h5 className="text-gray-600 mb-9 text-center">
+                    <h5 className="text-gray-600 mb-6">
                         Don't have an account yet? Register here!</h5>
 
-                    <form className="space-y-6" onSubmit={handleSubmit}>
+                    <form className="space-y-5" onSubmit={handleSubmit}>
                         {/* Name fields */}
                         <div className="flex flex-col lg:flex-row gap-6">
                             <div className="flex flex-col w-100">
@@ -140,7 +144,7 @@ export default function SignIn() {
                                 type="submit"
                                 className="w-full h-12 bg-Darkgreen hover:bg-[#267048] text-white font-bold rounded"
                             >
-                                Sign In
+                                Register
                             </button>
 
                         </div>
@@ -149,7 +153,7 @@ export default function SignIn() {
                             <p className="text-sm">
                                 Already have an account?{" "}
                                 <Link to="/signup" className="text-forest hover:underline ml-1">
-                                    Sign Up
+                                    Login here
                                 </Link>
                             </p>
                         </div>

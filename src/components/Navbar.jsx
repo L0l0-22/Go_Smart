@@ -14,8 +14,9 @@ const Navbar = () => {
         `}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-2 relative">
+        <NavLink to="/">
         <img src={logo} alt="Logo" className="w-24 h-12" />
-
+        </NavLink>
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
@@ -84,7 +85,7 @@ const Navbar = () => {
 
               onClick={() => setMenuOpen(false)}
             >
-              Sign Up
+              Register
             </NavLink>
           </li>
             <div className="lg:hidden flex gap-4">

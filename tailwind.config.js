@@ -4,12 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        beige: '#EDE6D6',
-        forest: '#3A5A40',
-        Darkgreen: '#2E8857',
-        peach: '#F2D8BF',
-        mint: '#A3C9A8',
-        brightBeige:'#F9F6EF',
+        main: '#000066',
+        sec: "#00cccc" , 
+        third:"#767FFF",
       },
       keyframes: {
         slideIn: {

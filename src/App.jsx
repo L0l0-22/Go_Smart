@@ -1,29 +1,26 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Plan from './pages/Plan';
-import Meals from './pages/Meals';
-import SignUp from './pages/SignUp';
-import SignIn from './pages/SignIn';
+import AllProjects from './pages/AllProjects';
+import ItSolutions from './pages/ItSolutions';
+import LearnMoreAbout from './pages/LearnMoreAbout';
+import Products from './pages/Products';
+import RequestDemo from './pages/RequestDemo';
 
 function App() {
-  const location = useLocation();
-  const hideLayout = location.pathname === "/signup" || location.pathname === "/signin";
-
   return (
     <>
-      {!hideLayout && <Navbar />}
-
+       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/plan" element={<Plan />} />
-        <Route path="/meals" element={<Meals />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/allprojects" element={<AllProjects />} />
+        <Route path="/itsolutions" element={<ItSolutions />} />
+        <Route path="/learnmore" element={<LearnMoreAbout />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/requestdemo" element={<RequestDemo />} />
       </Routes>
-
-      {!hideLayout && <Footer />}
+       <Footer />
     </>
   );
 }

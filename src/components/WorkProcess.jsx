@@ -58,7 +58,7 @@ export default function WorkProcess() {
             </h2>
         </div>   
         {/* process */}
-        <div className=' mt-8'>
+        <div className=' mt-8 hidden lg:block'>
           <div className='max-w-[85%] mx-auto '>
             <img src={process} alt="Go Smart process" className='w-full'/>
           </div>

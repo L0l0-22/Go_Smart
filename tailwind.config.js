@@ -6,7 +6,8 @@ export default {
       colors: {
         main: '#000066',
         sec: "#00cccc" , 
-        third:"#767FFF",
+        third:"#767FFF", 
+        forth: '#005BFF'
       },
       keyframes: {
         slideIn: {

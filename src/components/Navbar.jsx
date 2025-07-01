@@ -1,18 +1,28 @@
-import { FaTimes, FaBars, FaSeedling } from "react-icons/fa";
+import { FaTimes, FaBars} from "react-icons/fa";
 import { useState } from "react";
 import logo from "../assets/logo2.png";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const linkClasses = "block py-1 lg:py-0 text-gray-500 font-semibold transition-colors duration-200 hover:text-main hover:underline hover:underline-offset-4";
-
+  const navigate = useNavigate();
+  const handleScrollToSection = (id) => {
+    navigate("/");
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }
   return (
     <div className="fixed left-0 top-0 w-full z-50 text-gray-500 bg-[#F8FAFF] shadow transition-colors duration-700">
       <div className="container mx-auto flex items-center justify-between p-4 relative">
-        <a href="#home">
+        <NavLink to="/">
           <img src={logo} alt="Logo" className="lg:w-[167px] lg:h-[48px] w-48" />
-        </a>
+        </NavLink>
 
         <ul
           className={`${
@@ -22,53 +32,87 @@ const Navbar = () => {
           space-y-4 lg:space-y-0 lg:space-x-6 transition-all duration-300`}
         >
           <li>
-            <a href="#home" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <button
+              onClick={() => {
+                handleScrollToSection("home");
+                setMenuOpen(false);
+              }}
+              className={linkClasses}
+            >
               Home
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#about" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/about" onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                `${linkClasses} ${isActive ? 'text-main underline underline-offset-4 decoration-main scale-[1.02] -translate-y-1 transition-all duration-300' : ''}`
+              }
+              >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#services" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <button
+              onClick={() => {
+                handleScrollToSection("services");
+                setMenuOpen(false);
+              }}
+              className={linkClasses}
+            >
               Services
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#solutions" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/itsolutions" onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                `${linkClasses} ${isActive ? 'text-main underline underline-offset-4 decoration-main scale-[1.02] -translate-y-1 transition-all duration-300' : ''}`
+              }
+              >
               Solutions
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#technologies" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <button
+              onClick={() => {
+                handleScrollToSection("technologies");
+                setMenuOpen(false);
+              }}
+              className={linkClasses}
+            >
               Technologies
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#projects" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/allprojects" 
+            className={({ isActive }) =>
+                `${linkClasses} ${isActive ? 'text-main underline underline-offset-4 decoration-main scale-[1.02] -translate-y-1 transition-all duration-300' : ''}`
+              }
+            onClick={() => setMenuOpen(false)}>
               Projects
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#products" className={linkClasses} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/products" 
+            className={({ isActive }) =>
+                `${linkClasses} ${isActive ? 'text-main underline underline-offset-4 decoration-main scale-[1.02] -translate-y-1 transition-all duration-300' : ''}`
+              }
+            onClick={() => setMenuOpen(false)}>
               Products
-            </a>
+            </NavLink>
           </li>
           {/* Mobile-only buttons */}
           <div className="lg:hidden flex gap-4">
-           <button className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
+           <NavLink to="/requestdemo" className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
             Request Demo
-          </button>
+          </NavLink>
           </div>
         </ul>
 
         {/* Desktop buttons */}
         <div className="hidden lg:flex ">
-          <button className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
+          <NavLink to="/requestdemo" className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
             Request Demo
-          </button>
+          </NavLink>
         </div>
         
         {/* Mobile toggle */}

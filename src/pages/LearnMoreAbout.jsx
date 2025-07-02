@@ -125,7 +125,7 @@ export default function LearnMoreAbout() {
         <div className='mt-12'>
           <h1
             className="text-main text-5xl font-bold"
-            style={{ textShadow: '8px 8px ##EFF4FC' }}
+            style={{ textShadow: '6px 6px #CED5FF' }}
           >
             About Us
           </h1>

@@ -5,8 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import slider1 from "../assets/slider1.jpg";
 import slider2 from "../assets/slider2.jpeg";
-import { FaArrowDownLong } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 
 export default function MainSlider() {
   
@@ -45,7 +44,6 @@ export default function MainSlider() {
         }
       `}
       </style>
-
       <Swiper
         modules={[ Pagination, Autoplay]}
         spaceBetween={30}
@@ -85,9 +83,9 @@ export default function MainSlider() {
               <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 text-center line-clamp-2 md:leading-[3.2rem] lg:leading-[4.2rem]">
                 We Providing It Solution For Your Business
               </h2>
-              <button className="rounded-full border px-5 py-2 md:text-2xl flex items-center ">
+              <Link to="/itsolutions" className="rounded-full border px-5 py-2 md:text-2xl flex items-center ">
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

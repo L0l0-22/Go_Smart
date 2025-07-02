@@ -29,7 +29,7 @@ export default function About() {
 
           <div className="lg:w-1/3 w-full z-50 p-2 rounded-full bg-gradient-to-r from-[#DBE0FF] to-[#FFFFFF] shadow-lg">
             <Link to="about"
-              className="bg-main w-full text-xl font-medium text-white px-5 py-3 rounded-full flex justify-center transition-all duration-300"
+              className="bg-main hover:bg-[#000099] w-full text-xl font-medium text-white px-5 py-3 rounded-full flex justify-center transition-all duration-300"
             >
               Learn More
             </Link>

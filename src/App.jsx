@@ -7,11 +7,13 @@ import ItSolutions from './pages/ItSolutions';
 import LearnMoreAbout from './pages/LearnMoreAbout';
 import Products from './pages/Products';
 import RequestDemo from './pages/RequestDemo';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
-       <Navbar />
+      <ScrollToTop/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/allprojects" element={<AllProjects />} />

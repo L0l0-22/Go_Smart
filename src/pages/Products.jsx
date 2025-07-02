@@ -96,7 +96,7 @@ export default function Products() {
           {/* text */}
             <div className='flex justify-between mx-auto max-w-3xl'>
                 <p className='text-main text-xl md:text-3xl font-medium'>KDS</p>
-                <Link to="/requestdemo" className='bg-main text-white rounded-full px-3 py-1 md:px-6 md:py-2 md:text-xl'>
+                <Link to="/requestdemo" className='bg-main hover:bg-[#000099] text-white rounded-full px-3 py-1 md:px-6 md:py-2 md:text-xl'>
                   Ask  A  Demo
                 </Link>
             </div>
@@ -179,7 +179,7 @@ export default function Products() {
           {/* text */}
             <div className='flex justify-between mx-auto max-w-3xl'>
                 <p className='text-main text-3xl font-medium'>KDS</p>
-                <Link to="/requestdemo" className='bg-main text-white rounded-full px-6 py-2 text-xl'>
+                <Link to="/requestdemo" className='bg-main hover:bg-[#000099] text-white rounded-full px-6 py-2 text-xl'>
                   Ask  A  Demo
                 </Link>
             </div>
@@ -262,7 +262,7 @@ export default function Products() {
           {/* text */}
             <div className='flex justify-between mx-auto max-w-3xl'>
                 <p className='text-main text-3xl font-medium'>KDS</p>
-                <Link to="/requestdemo" className='bg-main text-white rounded-full px-6 py-2 text-xl'>
+                <Link to="/requestdemo" className='bg-main hover:bg-[#000099] text-white rounded-full px-6 py-2 text-xl'>
                   Ask  A  Demo
                 </Link>
             </div>
@@ -345,7 +345,7 @@ export default function Products() {
           {/* text */}
             <div className='flex justify-between mx-auto max-w-3xl'>
                 <p className='text-main text-3xl font-medium'>KDS</p>
-                <Link to="/requestdemo" className='bg-main text-white rounded-full px-6 py-2 text-xl'>
+                <Link to="/requestdemo" className='bg-main hover:bg-[#000099] text-white rounded-full px-6 py-2 text-xl'>
                   Ask  A  Demo
                 </Link>
             </div>

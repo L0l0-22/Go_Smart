@@ -8,16 +8,24 @@ import logistic from "../assets/logistic.png";
 import realState from "../assets/realState.png";
 import { FaArrowRight } from 'react-icons/fa6';
 import frame from "../assets/FrameCounter.png";
+import logoresp2 from "../assets/logoresp2.png";
+import logoresp from "../assets/logoresp.png";
 
 export default function Solutions() {
   return (
   <section id="solutions" className="py-12 px-4 bg-main relative">
-    <div className="absolute left-0 top-[-1px] hidden lg:block h-full z-10">
-      <img src={logo1} alt="Go Smart logo" className="h-full"/>
-    </div>
-    <div className="absolute right-0 top-[-1px] hidden lg:block h-full z-10">
-      <img src={logo2} alt="Go Smart logo" className="h-full"/>
-    </div>
+    <div className="absolute left-0 top-[-50px] lg:top-[-1px] hidden md:block lg:h-full z-10">
+                <img src={logo1} alt="Go Smart logo" className="lg:h-full lg:w-auto w-[22rem]"/>
+              </div>
+              <div className="absolute right-0 bottom-0 lg:top-[-1px] hidden md:block lg:h-full z-10">
+                <img src={logo2} alt="Go Smart logo" className="lg:h-full"/>
+              </div>
+              <div className="absolute left md:hidden block">
+                <img src={logoresp} alt="Go Smart logo" />
+              </div>
+              <div className="absolute right-0 bottom-0 md:hidden block">
+                <img src={logoresp2} alt="Go Smart logo" />
+              </div>
     {/* header */}
     <div className="flex flex-col items-center justify-center">
         <p className=" text-sec font-semibold uppercase flex items-center text-xl mb-3">

@@ -8,6 +8,9 @@ import process2 from "../assets/process2.png";
 import process3 from "../assets/process3.png";
 import process4 from "../assets/process4 .png";
 import process5 from "../assets/process5.png";
+import dott from "../assets/dott.png";
+import logoresp2 from "../assets/logoresp2.png";
+import logoresp from "../assets/logoresp.png";
 
 export default function WorkProcess() {
 
@@ -36,11 +39,17 @@ export default function WorkProcess() {
       `}
       </style>
       <div className="px-8 py-16 bg-[#F8FAFF] relative">
-         <div className="absolute left-0 top-[-1px] hidden md:block h-full z-10">
-            <img src={logo1} alt="Go Smart logo" className="h-full"/>
+         <div className="absolute left-0 top-[-50px] lg:top-[-1px] hidden md:block lg:h-full z-10">
+            <img src={logo1} alt="Go Smart logo" className="lg:h-full lg:w-auto w-[22rem]"/>
           </div>
-          <div className="absolute right-0 top-[-1px] hidden md:block h-full z-10">
-            <img src={logo2} alt="Go Smart logo" className="h-full"/>
+          <div className="absolute right-0 bottom-0 lg:top-[-1px] hidden md:block lg:h-full z-10">
+            <img src={logo2} alt="Go Smart logo" className="lg:h-full"/>
+          </div>
+          <div className="absolute left md:hidden block">
+            <img src={logoresp} alt="Go Smart logo" />
+          </div>
+          <div className="absolute right-0 bottom-0 md:hidden block">
+            <img src={logoresp2} alt="Go Smart logo" />
           </div>
         {/* header */}
         <div className="flex flex-col items-center justify-center">
@@ -48,23 +57,31 @@ export default function WorkProcess() {
               <span className="inline-block w-10 h-[2px] bg-main mr-2"></span>
               Work Process
               <span className="inline-block w-10 h-[2px] bg-main ml-2"></span>
-            </p>
-            <h2 className="text-xl md:text-5xl font-bold text-center">
-              <span className='flex items-center '>
+            </p> 
+            <h2 className="text-4xl lg:text-5xl font-bold text-center">
+              <span className='hidden md:flex items-center '>
                 Smarter Way To
-                <img src={elevate} alt="Go Smart elevate" className='mx-3 md:w-36 lg:w-40 w-[5.5rem]'/>
+                <img src={elevate} alt="Go Smart elevate" className='mx-3 w-32 lg:w-40 '/> 
+                Your Business
+              </span>
+              <span className='flex flex-col md:hidden items-center '>
+                Smarter Way To
+                <img src={elevate} alt="Go Smart elevate" className='my-3 w-32'/> 
                 Your Business
               </span>
             </h2>
         </div>   
         {/* process */}
-        <div className=' mt-8 hidden lg:block'>
-          <div className='max-w-[85%] mx-auto '>
+        <div className=' mt-8 '>
+          <div className='max-w-[85%] mx-auto hidden lg:block'>
             <img src={process} alt="Go Smart process" className='w-full'/>
           </div>
-         <div className="flex flex-col md:flex-row gap-[7.5rem] justify-center mt-10">
-            <div className="group relative w-full lg:w-[13%] z-30 mb-20 -mt-20">
-              <div className="custom-card bg-white shadow-lg hover:shadow-2xl hover:shadow-third transition-all duration-500 rounded-xl p-4 flex flex-col justify-center items-center text-center relative">
+         <div className="flex flex-col flex-wrap lg:flex-nowrap md:flex-row gap-12 lg:gap-[7.5rem] justify-center mt-10">
+            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
+              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+                <img src={dott} alt="Go Smart process" className='w-10'/>
+              </div>
+              <div className="custom-card bg-white shadow-lg hover:shadow-2xl hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
                 <img src={process1} alt="Go Smart service 1" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Discover</h3>
@@ -74,8 +91,11 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full lg:w-[13%] z-30">
-              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 flex flex-col justify-center items-center text-center relative">
+            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30">
+            <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+                <img src={dott} alt="Go Smart process" className='w-10'/>
+              </div>
+              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
                 <img src={process2} alt="Go Smart service 2" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Design</h3>
@@ -85,8 +105,11 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full lg:w-[13%] z-30 mb-20 -mt-20">
-              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 flex flex-col justify-center items-center text-center relative">
+            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
+              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+                <img src={dott} alt="Go Smart process" className='w-10'/>
+              </div>
+              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
                 <img src={process3} alt="Go Smart service 3" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Develop</h3>
@@ -96,8 +119,11 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full lg:w-[13%] z-30">
-              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 flex flex-col justify-center items-center text-center relative">
+            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30">
+              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+                <img src={dott} alt="Go Smart process" className='w-10'/>
+              </div>
+              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
                 <img src={process4} alt="Go Smart service 4" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Deliver</h3>
@@ -107,8 +133,11 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full lg:w-[13%] z-30 mb-20 -mt-20">
-              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 flex flex-col justify-center items-center text-center relative">
+            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
+              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+                <img src={dott} alt="Go Smart process" className='w-10'/>
+              </div>
+              <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
                 <img src={process5} alt="Go Smart service 5" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Support</h3>

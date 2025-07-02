@@ -20,14 +20,17 @@ const Navbar = () => {
   return (
     <div className="fixed left-0 top-0 w-full z-50 text-gray-500 bg-[#F8FAFF] shadow transition-colors duration-700">
       <div className="container mx-auto flex items-center justify-between p-4 relative">
+        <div className="lg:hidden">
+          <button className="text-main mt-1" onClick={() => setMenuOpen(!menuOpen)}>
+            <FaBars size={24} />
+          </button>
+        </div>
         <NavLink to="/">
-          <img src={logo} alt="Logo" className="lg:w-[167px] lg:h-[48px] w-48" />
+          <img src={logo} alt="Logo" className="lg:w-[167px] lg:h-[48px] md:w-32 w-24" />
         </NavLink>
 
         <ul
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-white px-6 py-4 
+          className={`hidden absolute top-full left-0 w-full bg-white px-6 py-4 
           lg:static lg:flex lg:w-auto lg:bg-transparent lg:p-0 text-xl
           space-y-4 lg:space-y-0 lg:space-x-6 transition-all duration-300`}
         >
@@ -100,29 +103,34 @@ const Navbar = () => {
               Products
             </NavLink>
           </li>
-          {/* Mobile-only buttons */}
-          <div className="lg:hidden flex gap-4">
-           <NavLink to="/requestdemo" className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
-            Request Demo
-          </NavLink>
-          </div>
         </ul>
+        {menuOpen && (
+          <div className="fixed inset-0 z-50 bg-white shadow-md flex flex-col gap-4 lg:hidden">
+            {/* Header */}
+            <div className="flex items-center justify-between p-6 shadow">
+              <h2 className="text-2xl font-bold text-[#000066]">Menu</h2>
+              <button onClick={() => setMenuOpen(false)} className="text-white p-2 rounded-full font-light bg-gray-400">
+                <FaTimes size={16} />
+              </button>
+            </div>
 
-        {/* Desktop buttons */}
-        <div className="hidden lg:flex ">
-          <NavLink to="/requestdemo" className="px-6 py-2 text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow text-forest bg-main font-medium transition-colors duration-200">
+            {/* Menu Items */}
+            <nav className="flex flex-col gap-6 text-lg text-gray-500 font-medium p-6">
+              <button onClick={() => { handleScrollToSection("home"); setMenuOpen(false); }} className="text-left border-b pb-2">Home</button>
+              <button onClick={() => { handleScrollToSection("services"); setMenuOpen(false); }} className="text-left border-b pb-2">Services</button>
+              <NavLink to="/about" onClick={() => setMenuOpen(false)} className="text-left border-b pb-2">About</NavLink>
+              <NavLink to="/itsolutions" onClick={() => setMenuOpen(false)} className="text-left border-b pb-2">Solutions</NavLink>
+              <button onClick={() => { handleScrollToSection("technologies"); setMenuOpen(false); }} className="text-left border-b pb-2">Technologies</button>
+              <NavLink to="/allprojects" onClick={() => setMenuOpen(false)} className="text-left border-b pb-2">Projects</NavLink>
+              <NavLink to="/products" onClick={() => setMenuOpen(false)} className="text-left border-b pb-2">Products</NavLink>
+            </nav>
+          </div>
+        )}
+
+        <div className=" lg:flex ">
+          <NavLink to="/requestdemo" className="md:px-6 md:py-2 px-4 py-1 text-sm md:text-lg text-white hover:bg-transparent hover:text-main hover:border hover:border-main rounded-full shadow bg-main font-medium transition-colors duration-200">
             Request Demo
           </NavLink>
-        </div>
-        
-        {/* Mobile toggle */}
-        <div className="lg:hidden">
-          <button
-            className="text-main"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
         </div>
       </div>
     </div>

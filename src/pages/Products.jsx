@@ -19,8 +19,8 @@ export default function Products() {
       <div className="absolute right-0 top-[-1px] hidden md:block h-full z-10">
         <img src={logo2} alt="Go Smart logo" className="h-full"/>
       </div>
-      <div className="max-w-[95%] mx-auto z-30">
-        <div className='flex gap-10 flex-wrap '>
+      <div className="max-w-[90%] container  mx-auto z-30">
+        <div className='flex gap-10 flex-wrap justify-center'>
           <div className='w-full lg:w-[45%] rounded-xl border border-[#7DAFFF] bg-gradient-to-b from-white to-[#E4EEFF] p-6 z-30'>
           {/* slider */}
             <div className='relative'>

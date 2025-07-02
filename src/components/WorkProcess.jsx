@@ -86,7 +86,7 @@ export default function WorkProcess() {
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Discover</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                    We begin by thoroughly understanding your business needs and objectives to tailor the best software solution for you.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function WorkProcess() {
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Design</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Lonam ipsum is simply Dummy Test Of The Printing And Lorem psum is simply
+                    Our expert designers create intuitive and user-friendly interfaces that ensure seamless user experiences.
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function WorkProcess() {
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Develop</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Lonam ipsum is simply Dummy Test Of The Printing And Lorem psum is simply
+                    Our developers build robust, scalable, and secure software applications using modern technologies.
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function WorkProcess() {
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Deliver</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Lonam ipsum is simply Dummy Test Of The Printing And Lorem psum is simply
+                    We deliver and deploy your custom solution with thorough testing and quality assurance to ensure optimal performance.
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function WorkProcess() {
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Support</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Lonam ipsum is simply Dummy Test Of The Printing And Lorem psum is simply
+                    Our dedicated support team provides ongoing assistance and maintenance to keep your software running smoothly.
                   </p>
                 </div>
               </div>

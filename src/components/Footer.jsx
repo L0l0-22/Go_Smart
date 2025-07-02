@@ -54,7 +54,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-medium">Email Us</p>
-                  <p>Info@Gosmart.Ae</p>
+                  <p>info@gosmart.eg</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -63,7 +63,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-medium">Call Us</p>
-                  <p>+20 109 434 3113</p>
+                  <p>+010 9434 3113</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

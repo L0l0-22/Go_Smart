@@ -4,14 +4,25 @@ import {
   FaInstagram,
   FaGooglePlusG,
 } from "react-icons/fa";
-import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from "react-icons/hi";
 import logo from "../assets/logoFooter.png"
 import footer from "../assets/footer.png"
 import mail from "../assets/email.png"
 import phone from "../assets/phone-call.png"
 import location from "../assets/location.png"
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+  const handleScrollToSection = (id) => {
+      navigate("/");
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
   return (
     <footer className="bg-main text-white p-12 rounded-t-[50px] relative overflow-hidden">
         <div className="absolute right-0 top-[-5px] hidden md:block h-full">
@@ -27,7 +38,13 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 mt-4 text-2xl text-gray-300">
             <FaGooglePlusG className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
-            <FaFacebookF className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
+            <a
+              href="https://www.facebook.com/profile.php?id=61569309920849&rdid=mzTDeoXuYCydAuMy&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ERJmTREkV%2F#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
+            </a>
             <FaTwitter className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
             <FaInstagram className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
           </div>
@@ -37,12 +54,12 @@ export default function Footer() {
           <div className="w-full lg:w-auto">
           <h4 className="text-lg font-medium  mb-3">Useful Links</h4>
           <ul className="space-y-4 text-gray-300">
-            <li><a href="#about" className="hover:text-white">About</a></li>
-            <li><a href="#services" className="hover:text-white">Services</a></li>
-            <li><a href="#solutions" className="hover:text-white">Solutions</a></li>
-            <li><a href="#technologies" className="hover:text-white">Technologies</a></li>
-            <li><a href="#projects" className="hover:text-white">Projects</a></li>
-            <li><a href="#products" className="hover:text-white">Products</a></li>
+            <li><NavLink to="/about" className="hover:text-white">About</NavLink></li>
+            <li><button onClick={() => { handleScrollToSection("services") }} className="hover:text-white">Services</button></li>
+            <li><NavLink to="/itsolutions" className="hover:text-white">Solutions</NavLink></li>
+            <li><button onClick={() => { handleScrollToSection("technologies") }} className="hover:text-white">Technologies</button></li>
+            <li><NavLink to="/allprojects" className="hover:text-white">Projects</NavLink></li>
+            <li><NavLink to="/products" className="hover:text-white">Products</NavLink></li>
           </ul>
           </div>
           <div className="w-full lg:w-auto">

@@ -64,10 +64,9 @@ export default function MainSlider() {
               <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 text-center line-clamp-2 md:leading-[3.2rem] lg:leading-[4.2rem]">
                 Elevate Your Business With Our Software Expertise
               </h2>
-              <button className="rounded-full border px-5 py-2 md:text-2xl flex items-center relative">
-                {/* <FaArrowDownLong className="absolute left-[-8px]" size={26}/> */}
+              <a href="#services" className="rounded-full border px-5 py-2 md:text-2xl flex items-center relative">
                 Get Started Now
-              </button>
+              </a>
             </div>
           </div>
         </SwiperSlide>

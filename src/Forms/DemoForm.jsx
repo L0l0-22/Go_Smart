@@ -153,11 +153,11 @@ export default function DemoForm() {
                             <div
                                 key={index}
                                 onClick={() => toggleModule(mod.name)}
-                                className={`cursor-pointer w-[155px] sm:w-[191px] h-[68px] border 
-            ${isSelected ? 'bg-[#E5EDFF] border-[#2B3FE8]' : 'bg-white border-gray-300'}
-            rounded-[43px] px-[16px] py-[8px] flex items-center gap-[16px] 
-            text-black shadow hover:shadow-lg transition`}
-                            >
+                                className={`cursor-pointer w-[145px] sm:w-[191px] h-[68px] border 
+                                    ${isSelected ? 'bg-[#E5EDFF] border-[#2B3FE8]' : 'bg-white border-[#CED5FF]'}
+                                    rounded-[43px] px-[16px] py-[8px] flex items-center gap-[16px] 
+                                    text-black shadow-[4px_4px_0px_0px_#DAE8FF] hover:shadow-lg transition`}
+                                 >
                                 <img src={mod.icon} alt={mod.name} className="w-6 h-6 object-contain" />
                                 <span title={mod.name}  className="font-[Poppins] font-medium text-[16px] leading-[100%] capitalize text-[#030315] truncate w-full block">
                                     {mod.name}

@@ -64,7 +64,7 @@ export default function Home() {
                 console.log('Email submitted:', email);
                 setIsModalOpen(false);
               }}
-             className="mt-4 w-full bg-main text-white py-2 rounded-lg hover:bg-[#000066] transition text-lg">
+             className="mt-4 w-full bg-main text-white py-2 rounded-lg hover:bg-[#000099] transition text-lg">
               Subscribe Now
             </button>
           </div>

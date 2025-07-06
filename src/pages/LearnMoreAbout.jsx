@@ -177,7 +177,7 @@ export default function LearnMoreAbout() {
             </div>
           </div>
           <div className='flex justify-end z-30'>
-            <Link to="/requestdemo" className='px-4 py-2 bg-main hover:bg-[#000099] text-white border rounded shadow w-fit flex items-center' >
+            <Link to="/requestdemo" className='px-4 py-2 bg-main hover:bg-[#000099] text-white border rounded-xl shadow w-fit flex items-center' >
               Request A Demo
               <MdOutlineArrowOutward className='ml-3' size={20}/>
             </Link>

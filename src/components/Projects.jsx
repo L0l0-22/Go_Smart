@@ -24,7 +24,7 @@ export default function Projects() {
         </h2>
       </div>
 
-      <h5 className="flex items-center justify-end lg:max-w-[90%] text-main font-medium text-base mt-5 lg:mt-0">
+      <h5 className="flex items-center justify-end lg:max-w-[90%] text-main font-medium text-base mt-5 lg:mt-0 cursor-pointer">
         <span className="bg-main rounded-full text-white p-2 mr-2">
           <FaArrowDown />
         </span>
@@ -85,7 +85,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <h5 className="flex items-center justify-end max-w-[90%] text-main font-medium text-xl underline underline-offset-2">
+      <h5 className="flex items-center justify-end max-w-[90%] text-main font-medium text-xl underline underline-offset-2 cursor-pointer">
         See More
       </h5>
     </div>

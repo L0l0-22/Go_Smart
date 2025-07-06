@@ -10,6 +10,7 @@ import { FaArrowRight } from 'react-icons/fa6';
 import frame from "../assets/FrameCounter.png";
 import logoresp2 from "../assets/logoresp2.png";
 import logoresp from "../assets/logoresp.png";
+import { Link } from 'react-router-dom';
 
 export default function Solutions() {
   return (
@@ -57,10 +58,10 @@ export default function Solutions() {
                 <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-200">
                   Streamline And Integrate Your Business Operations With Our Comprehensive ERP Solutions Manage Finance, Inventory, Hurnon Resources, And Supply Chaine Efficiently, Ensuring Dato Accuracy And Real-Time Insights
                 </p>
-                <button className='text-sec flex items-center text-lg'>
+                <Link to="/itsolutions" className='text-sec flex items-center text-lg'>
                   Learn More
                   <FaArrowRight  className='ml-2'/>
-                </button>
+                </Link>
             </div>
         </div>
         <div className="p-4 relative w-full md:w-[48%] lg:w-[18.5%] z-30">
@@ -77,10 +78,10 @@ export default function Solutions() {
                 <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-200">
                   Improve Fatient Care And Streamline Administrative Tasks With Our Heultticare Management Solutions Features Include Appointroent Scheduling Electronic Health Records, Billing Management, And Reporting Toon
                 </p>
-                <button className='text-sec flex items-center text-lg '>
+                <Link to="/itsolutions" className='text-sec flex items-center text-lg'>
                   Learn More
                   <FaArrowRight  className='ml-2'/>
-                </button>
+                </Link>
             </div>
         </div>
         <div className="p-4 relative w-full md:w-[48%] lg:w-[18.5%] z-30">
@@ -97,10 +98,10 @@ export default function Solutions() {
                 <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-200">
                   Optimize Operations With Our All-in-One Software For Retail And F&B Businesses. Manage Inventory, Sales, And Customer Engagement Effortlessly.Our Solutions Feature Advanced POS Systems, Cloud Kitchen
                 </p>
-                <button className='text-sec flex items-center text-lg '>
+                <Link to="/itsolutions" className='text-sec flex items-center text-lg'>
                   Learn More
                   <FaArrowRight  className='ml-2'/>
-                </button>
+                </Link>
             </div>
         </div>
         <div className="p-4 relative w-full md:w-[48%] lg:w-[18.5%] z-30">
@@ -117,10 +118,10 @@ export default function Solutions() {
                 <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-200">
                   Enhance Logistics Operations With Real-Time Tracking Automoted Workhom And RoutR Optimization Our System Eneures Seamless Coordination Of Shipments, Inventory, And Warehouse Management
                 </p>
-                <button className='text-sec flex items-center text-lg '>
+                <Link to="/itsolutions" className='text-sec flex items-center text-lg'>
                   Learn More
                   <FaArrowRight  className='ml-2'/>
-                </button>
+                </Link>
             </div>
         </div>
         <div className="p-4 relative w-full md:w-[48%] lg:w-[18.5%] z-30">
@@ -137,10 +138,10 @@ export default function Solutions() {
                 <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-200">
                   Streamline And integrate Your Business Operations With Our Comprehensive ERP Solutions. Manage Finance, Inventory, Human Resources, And Supply Chains Efficiently, Ensuring Data Accuracy And Real-Time Insights
                 </p>
-                <button className='text-sec flex items-center text-lg '>
+                <Link to="/itsolutions" className='text-sec flex items-center text-lg'>
                   Learn More
                   <FaArrowRight  className='ml-2'/>
-                </button>
+                </Link>
             </div>
         </div>
     </div> 

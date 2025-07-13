@@ -39,11 +39,11 @@ export default function WorkProcess() {
       `}
       </style>
       <div className="px-8 py-16 bg-[#F8FAFF] relative">
-         <div className="absolute left-0 top-[-50px] lg:top-[-1px] hidden md:block lg:h-full z-10">
-            <img src={logo1} alt="Go Smart logo" className="lg:h-full lg:w-auto w-[22rem]"/>
+         <div className="absolute left-0 top-[-50px] xl:top-[-1px] hidden md:block xl:h-full z-10">
+            <img src={logo1} alt="Go Smart logo" className="xl:h-full xl:w-auto w-[22rem]"/>
           </div>
-          <div className="absolute right-0 bottom-0 lg:top-[-1px] hidden md:block lg:h-full z-10">
-            <img src={logo2} alt="Go Smart logo" className="lg:h-full"/>
+          <div className="absolute right-0 bottom-0 xl:top-[-1px] hidden md:block xl:h-full z-10">
+            <img src={logo2} alt="Go Smart logo" className="xl:h-full"/>
           </div>
           <div className="absolute left md:hidden block">
             <img src={logoresp} alt="Go Smart logo" />
@@ -58,10 +58,10 @@ export default function WorkProcess() {
               Work Process
               <span className="inline-block w-10 h-[2px] bg-main ml-2"></span>
             </p> 
-            <h2 className="text-4xl lg:text-5xl font-bold text-center">
+            <h2 className="text-4xl xl:text-5xl font-bold text-center">
               <span className='hidden md:flex items-center '>
                 Smarter Way To
-                <img src={elevate} alt="Go Smart elevate" className='mx-3 w-32 lg:w-40 '/> 
+                <img src={elevate} alt="Go Smart elevate" className='mx-3 w-32 xl:w-40 '/> 
                 Your Business
               </span>
               <span className='flex flex-col md:hidden items-center '>
@@ -73,12 +73,12 @@ export default function WorkProcess() {
         </div>   
         {/* process */}
         <div className=' mt-8 '>
-          <div className='max-w-[85%] mx-auto hidden lg:block'>
+          <div className='max-w-[85%] mx-auto hidden xl:block'>
             <img src={process} alt="Go Smart process" className='w-full'/>
           </div>
-         <div className="flex flex-col flex-wrap lg:flex-nowrap md:flex-row gap-12 lg:gap-[7.5rem] justify-center mt-10">
-            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
-              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+         <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row gap-12 xl:gap-[7.5rem] justify-center mt-10">
+            <div className="group relative w-full md:w-[45%] xl:w-[13%] z-30 xl:mb-20 xl:-mt-20">
+              <div className='flex justify-center items-center xl:hidden absolute -top-5 z-40  w-full'>
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-2xl hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
@@ -91,8 +91,8 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30">
-            <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+            <div className="group relative w-full md:w-[45%] xl:w-[13%] z-30">
+            <div className='flex justify-center items-center xl:hidden absolute -top-5 z-40  w-full'>
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
@@ -105,8 +105,8 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
-              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+            <div className="group relative w-full md:w-[45%] xl:w-[13%] z-30 xl:mb-20 xl:-mt-20">
+              <div className='flex justify-center items-center xl:hidden absolute -top-5 z-40  w-full'>
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
@@ -119,8 +119,8 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30">
-              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+            <div className="group relative w-full md:w-[45%] xl:w-[13%] z-30">
+              <div className='flex justify-center items-center xl:hidden absolute -top-5 z-40  w-full'>
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
@@ -133,8 +133,8 @@ export default function WorkProcess() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-full md:w-[45%] lg:w-[13%] z-30 lg:mb-20 lg:-mt-20">
-              <div className='flex justify-center items-center lg:hidden absolute -top-5 z-40  w-full'>
+            <div className="group relative w-full md:w-[45%] xl:w-[13%] z-30 xl:mb-20 xl:-mt-20">
+              <div className='flex justify-center items-center xl:hidden absolute -top-5 z-40  w-full'>
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">

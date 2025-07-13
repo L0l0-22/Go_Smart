@@ -32,7 +32,7 @@ export default function Technologies() {
             Technologies
             <span className="inline-block w-10 h-[2px] bg-main ml-2"></span>
           </p>
-          <h2 className="text-2xl lg:text-5xl font-bold text-center">
+          <h2 className="text-2xl xl:text-5xl font-bold text-center">
             <span className='flex items-center '>
               Technologies   
               <img src={we} alt="Go Smart we" className='mx-3 w-14 md:w-20 '/> 
@@ -43,7 +43,7 @@ export default function Technologies() {
           {/* Technologies Grid */}
           <div className="mt-12 space-y-8">
             {/* First row: 4 items */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
               {firstRow.map((tech, index) => (
                 <div
                   key={index}
@@ -60,7 +60,7 @@ export default function Technologies() {
 
             {/* Second row: 3 items */}
             <div className="flex justify-center mt-2">
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 xl:grid-cols-3 gap-6">
                 {secondRow.map((tech, index) => {
 
                   // CENTERING THE THIRD CARD IF IT'S ODD NUMBER |3|
@@ -70,7 +70,7 @@ export default function Technologies() {
 
                   const itemClasses =
                     isLast && isOdd
-                      ? "col-span-2 flex justify-center lg:col-span-1 lg:justify-start"
+                      ? "col-span-2 flex justify-center xl:col-span-1 xl:justify-start"
                       : "";
 
                   return (

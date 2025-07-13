@@ -25,7 +25,7 @@ export default function Projects() {
         </h2>
       </div>
 
-      <h5 className="flex items-center justify-end lg:max-w-[90%] text-main font-medium text-base mt-5 lg:mt-0 cursor-pointer">
+      <h5 className="flex items-center justify-end xl:max-w-[90%] text-main font-medium text-base mt-5 xl:mt-0 cursor-pointer">
         <span className="bg-main rounded-full text-white p-2 mr-2">
           <FaArrowDown />
         </span>
@@ -52,7 +52,7 @@ export default function Projects() {
         </div>
 
         {/* Middle Card */}
-        <div className="w-full sm:w-[90%] md:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between lg:-mt-16 z-20">
+        <div className="w-full sm:w-[90%] md:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between xl:-mt-16 z-20">
           <div>
             <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
               Project Name

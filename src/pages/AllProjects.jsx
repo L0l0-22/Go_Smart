@@ -17,11 +17,11 @@ export default function AllProjects() {
 
   return (
     <div className=" bg-white py-8 mt-6 relative">
-      <div className="absolute left-0 top-[-50px] lg:top-[-1px] hidden md:block lg:h-full z-10">
-        <img src={logo1} alt="Go Smart logo" className="lg:h-full lg:w-auto w-[22rem]"/>
+      <div className="absolute left-0 top-[-50px] xl:top-[-1px] hidden md:block xl:h-full z-10">
+        <img src={logo1} alt="Go Smart logo" className="xl:h-full xl:w-auto w-[22rem]"/>
       </div>
-      <div className="absolute right-0 bottom-0 lg:top-[-1px] hidden md:block lg:h-full z-10">
-        <img src={logo2} alt="Go Smart logo" className="lg:h-full"/>
+      <div className="absolute right-0 bottom-0 xl:top-[-1px] hidden md:block xl:h-full z-10">
+        <img src={logo2} alt="Go Smart logo" className="xl:h-full"/>
       </div>
       <div className="absolute left md:hidden block">
         <img src={logoresp} alt="Go Smart logo" />
@@ -29,11 +29,11 @@ export default function AllProjects() {
       <div className="absolute right-0 bottom-0 md:hidden block">
         <img src={logoresp2} alt="Go Smart logo" />
       </div>
-      <div className="max-w-7xl mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 z-30">
+      <div className="xl:max-w-7xl max-w-full mx-4 xl:mx-auto relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-16 z-30">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full sm:w-[90%] lg:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10"          >
+            className="w-full sm:w-[90%] xl:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10"          >
             <div>
               <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
                 {project.name}

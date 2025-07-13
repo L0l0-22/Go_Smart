@@ -82,7 +82,7 @@ export default function WorkProcess() {
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-2xl hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
-                <img src={process1} alt="Go Smart service 1" className='w-[72px] h-[72px]' />
+                <img src={process1} alt="Go Smart process 1" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Discover</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
@@ -96,7 +96,7 @@ export default function WorkProcess() {
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
-                <img src={process2} alt="Go Smart service 2" className='w-[72px] h-[72px]' />
+                <img src={process2} alt="Go Smart process 2" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Design</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
@@ -110,7 +110,7 @@ export default function WorkProcess() {
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
-                <img src={process3} alt="Go Smart service 3" className='w-[72px] h-[72px]' />
+                <img src={process3} alt="Go Smart process 3" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Develop</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
@@ -124,7 +124,7 @@ export default function WorkProcess() {
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
-                <img src={process4} alt="Go Smart service 4" className='w-[72px] h-[72px]' />
+                <img src={process4} alt="Go Smart process 4" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Deliver</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
@@ -138,7 +138,7 @@ export default function WorkProcess() {
                 <img src={dott} alt="Go Smart process" className='w-10'/>
               </div>
               <div className="custom-card bg-white shadow-lg hover:shadow-third transition-all duration-500 rounded-xl p-4 pt-6 flex flex-col justify-center items-center text-center relative">
-                <img src={process5} alt="Go Smart service 5" className='w-[72px] h-[72px]' />
+                <img src={process5} alt="Go Smart process 5" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Support</h3>
                   <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">

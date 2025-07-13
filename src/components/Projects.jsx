@@ -2,6 +2,7 @@ import React from 'react';
 import projects from "../assets/projects.png";
 import frame from "../assets/Frame 109.png";
 import { FaArrowDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
   return (
@@ -85,9 +86,9 @@ export default function Projects() {
         </div>
       </div>
 
-      <h5 className="flex items-center justify-end max-w-[90%] text-main font-medium text-xl underline underline-offset-2 cursor-pointer">
+      <Link to="/allprojects" className="flex items-center justify-end max-w-[90%] text-main font-medium text-xl underline underline-offset-2 cursor-pointer">
         See More
-      </h5>
+      </Link>
     </div>
   );
 }

@@ -36,8 +36,8 @@ export default function Services() {
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Mobile Apps</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Mobile Apps, Delivering Tallared Solutions That Enhance User Experience, 
-                      Engagement And Business Efficiency
+                      We Specialize in Developing Mobile Apps, Delivering Tailored Solutions That Enhance User Experience, 
+                      Engagement And Business Efficiency.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -45,11 +45,11 @@ export default function Services() {
                 </div>
             </div>
             <div className="bg-white shadow-md rounded py-4 pl-5 relative w-full md:w-[48%] lg:w-[32%] ">
-                <img src={service2} alt="Go Smart serviece 1"/>
+                <img src={service2} alt="Go Smart serviece 2"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Website</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Dynamic And Responsive Websites, Combining Creativity And Functionality To Enhance Our Customers Online Presence And Needs
+                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -57,23 +57,22 @@ export default function Services() {
                 </div>
             </div>
             <div className="bg-white shadow-md rounded py-4 pl-5 relative w-full md:w-[48%] lg:w-[32%] ">
-                <img src={service3} alt="Go Smart serviece 1"/>
+                <img src={service3} alt="Go Smart serviece 3"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Computer Vision</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Provide Advanced Computer Vision Solutions, Leveraging Innovative Technologies And Addressing Clients Diverse Needs
-                    </p>
+                      We provide advanced computer vision solutions, leveraging innovative technologies to address our clients’ diverse needs.                    </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
                     <img src={ser3}/>
                 </div>
             </div>
             <div className="bg-white shadow-md rounded py-4 pl-5 relative w-full md:w-[48%] lg:w-[32%]">
-                <img src={service4} alt="Go Smart serviece 1"/>
+                <img src={service4} alt="Go Smart serviece 4"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Docker & Pods & Containers</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Dynamic And Responsive Websites, Combining Creativity And Functionality To Enhance Our Customers Online Presence And Needs
+                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -81,11 +80,11 @@ export default function Services() {
                 </div>
             </div>
             <div className="bg-white shadow-md rounded py-4 pl-5 relative w-full md:w-[48%] lg:w-[32%]">
-                <img src={service5} alt="Go Smart serviece 1"/>
+                <img src={service5} alt="Go Smart serviece 5"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Full Stack</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Dynamic And Responsive Websites, Combining Creativity And Functionality To Enhance Our Customers Online Presence And Needs
+                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -93,11 +92,11 @@ export default function Services() {
                 </div>
             </div>
             <div className="bg-white shadow-md rounded py-4 pl-5 relative w-full md:w-[48%] lg:w-[32%]">
-                <img src={service6} alt="Go Smart serviece 1"/>
+                <img src={service6} alt="Go Smart serviece 6"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Machine Learning</h3>
                     <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Dynamic And Responsive Websites, Combining Creativity And Functionality To Enhance Our Customers Online reisence And Needs
+                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">

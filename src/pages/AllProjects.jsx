@@ -29,13 +29,13 @@ export default function AllProjects() {
       <div className="absolute right-0 bottom-0 md:hidden block">
         <img src={logoresp2} alt="Go Smart logo" />
       </div>
-      <div className="xl:max-w-7xl max-w-full mx-4 xl:mx-auto relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-16 z-30">
+      <div className="xl:max-w-7xl max-w-full mx-4 xl:mx-auto relative justify-center flex flex-wrap gap-8 py-16 z-30">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full sm:w-[90%] xl:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10"          >
+            className="w-full md:w-[47%] xl:w-[30%] max-w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10"          >
             <div>
-              <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
+              <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-main px-4 py-2">
                 {project.name}
               </h3>
               <p className="text-sm font-normal leading-[150%] capitalize font-[Poppins] text-[#03030C4D] px-4 py-2">
@@ -49,7 +49,7 @@ export default function AllProjects() {
               className="object-contain mx-auto w-full max-w-[300px]"
             />
 
-           <button className="w-full mt-6 rounded bg-[#000066] text-white text-base md:text-lg font-semibold px-4 py-3">
+           <button className="w-full mt-6 rounded bg-main hover:bg-[#000099] text-white text-base md:text-lg font-semibold px-4 py-3">
               {project.buttonText}
             </button>
           </div>

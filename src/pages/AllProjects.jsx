@@ -1,19 +1,20 @@
 
 import React from 'react';
-import frame from "../assets/Frame 109.png";
+import demo from "../assets/projectDemo2.mp4"
 import logo1 from "../assets/workLogo.png";
 import logo2 from "../assets/workLogo2.png";
 import logoresp2 from "../assets/logoresp2.png";
 import logoresp from "../assets/logoresp.png";
 
 export default function AllProjects() {
-  const projects = Array(6).fill({
-    name: "Project Name",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    image: frame,
-    buttonText: "Mobile App & Website",
-  });
+const projects = Array(6).fill({
+  name: "Project Name",
+  description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  video: demo,
+  buttonText: "Mobile App & Website",
+});
+
 
   return (
     <div className=" bg-white py-8 mt-6 relative">
@@ -43,11 +44,15 @@ export default function AllProjects() {
               </p>
             </div>
 
-            <img
-              src={project.image}
-              alt="Project visual"
-              className="object-contain mx-auto w-full max-w-[300px]"
+            <video
+              src={project.video}
+              className="object-contain mx-auto w-full max-w-[300px] rounded-md"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
+
 
            <button className="w-full mt-6 rounded bg-main hover:bg-[#000099] text-white text-base md:text-lg font-semibold px-4 py-3">
               {project.buttonText}

@@ -11,6 +11,7 @@ import contaqa from "../assets/contaqa.png";
 import omega from "../assets/omega.png";
 import rakict from "../assets/rakict.png";
 import benaa from "../assets/benaa.png";
+import Aldiwan from "../assets/Aldiwan.png";
 
 export default function Partner() {
   const partners = [
@@ -25,7 +26,7 @@ export default function Partner() {
     { image: omega },
     { image: rakict },
     { image: benaa },
-
+    { image: Aldiwan },
   ];
 
   return (

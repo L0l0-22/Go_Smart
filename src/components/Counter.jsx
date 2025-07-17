@@ -28,11 +28,11 @@ export default function Counter() {
                     className="absolute top-[-10px] left-[-10px] md:left-[-24px] w-14 lg:top-[-15px] lg:left-[-40px] lg:w-24"
                   />
                   <p className="font-medium text-4xl lg:text-7xl text-sec relative z-10">
-                      {/* {start && <CountUp end={57} duration={8} suffix="+" />}    */}
-                      {isInView && <CountUp key={isInView.toString() + '-57'} end={57} duration={8} suffix="+" />}
+                      {/* {start && <CountUp end={63} duration={8} suffix="+" />}    */}
+                      {isInView && <CountUp key={isInView.toString() + '-63'} end={63} duration={8} suffix="+" />}
                 </p>
                 </div>
-                <p className='text-sm lg:text-lg mt-5 font-bold'>Compelete Projects</p>
+                <p className='text-sm lg:text-lg mt-5 font-bold'>Completed Projects</p>
             </div>
             <div className=' '>
                  <div className="relative w-24 md:w-28 lg:w-36 mx-auto">
@@ -43,7 +43,7 @@ export default function Counter() {
                   />
                   <p className="font-medium text-4xl lg:text-7xl text-sec relative z-10">
                     {/* {start && <CountUp end={113} duration={8} suffix="+" />}    */}
-                    {isInView && <CountUp key={isInView.toString() + '-113'} end={113} duration={8} suffix="+" />}
+                    {isInView && <CountUp key={isInView.toString() + '-77'} end={77} duration={8} suffix="+" />}
                   </p>
                 </div>
                 <p className='text-sm lg:text-lg mt-5 font-bold'>Satisfied Customers</p>
@@ -71,7 +71,7 @@ export default function Counter() {
                   />
                   <p className="font-medium text-4xl lg:text-7xl text-sec relative z-10">
                     {/* {start && <CountUp end={2} duration={8} suffix="+" />}    */}
-                    {isInView && <CountUp key={isInView.toString() + '-2'} end={2} duration={8} suffix="+" />}
+                    {isInView && <CountUp key={isInView.toString() + '-6'} end={6} duration={8} suffix="+" />}
                   </p>
                 </div>
                 <p className='text-sm lg:text-lg mt-5 font-bold'>Years Experience</p>

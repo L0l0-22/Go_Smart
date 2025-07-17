@@ -33,8 +33,7 @@ export default function Footer() {
         <div className="lg:max-w-sm w-full">
           <img src={logo} alt="Go Smart Logo" className="w-48 mb-4" />
           <p className="md:line-clamp-3 line-clamp-5 text-lg leading-relaxed text-gray-300">
-            Go Smart Is Dedicated To Innovation And Accessibility, Creating
-            Impactful Software Solutions For Everyone, Everywhere.
+           At Gosmart We empower businesses with innovative, scalable software, driven by excellence, vision, and partnership.
           </p>
           <div className="flex gap-4 mt-4 text-2xl text-gray-300">
             <FaGooglePlusG className="hover:text-white cursor-pointer rounded-full border p-2 w-10 h-10" />
@@ -53,7 +52,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:space-x-28 space-y-10 md:space-y-0 lg:mr-52">
           <div className="w-full lg:w-auto">
           <h4 className="text-lg font-medium  mb-3">Useful Links</h4>
-          <ul className="space-y-4 text-gray-300">
+          <ul className="space-y-2 text-gray-300">
             <li><NavLink to="/about" className="hover:text-white">About</NavLink></li>
             <li><button onClick={() => { handleScrollToSection("services") }} className="hover:text-white">Services</button></li>
             <li><NavLink to="/itsolutions" className="hover:text-white">Solutions</NavLink></li>
@@ -64,7 +63,7 @@ export default function Footer() {
           </div>
           <div className="w-full lg:w-auto">
             <h4 className="text-lg font-medium mb-3">Contact Us</h4>
-            <div className="space-y-6  text-gray-300">
+            <div className="space-y-3  text-gray-300">
               <div className="flex items-start gap-3">
                 <div className="p-2 rounded-full border border-[#3232bb] bg-[#242485]">
                   <img src={mail} alt="Go Smart mail" className="w-6 max-w-[1.5rem]" />
@@ -89,7 +88,7 @@ export default function Footer() {
                 </div>                <div>
                   <p className="font-medium">Reach Us</p>
                   <p>
-                    16A/4 1st-Laselky Division, <br />
+                    16A/4 El-Laselky Division, <br />
                     New Maadi, Cairo, Egypt
                   </p>
                 </div>

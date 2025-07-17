@@ -10,13 +10,13 @@ import odoo from "../assets/Odoo.png"; // Change if you have a real odoo logo
 
 export default function Technologies() {
   const technologies = [
-    { name: 'Docker', image: docker },
+    { name: '', image: docker },
     { name: 'Python', image: python },
     { name: 'WordPress', image: wordpress },
-    { name: 'Node.js', image: node },
-    { name: 'DJ', image: dj }, // Replace with real Django logo if needed
+    { name: '', image: node },
+    { name: 'Django', image: dj }, // Replace with real Django logo if needed
     { name: 'Flutter', image: flutter },
-    { name: 'Odoo', image: odoo },
+    { name: '', image: odoo },
   ];
 
   const firstRow = technologies.slice(0, 4);

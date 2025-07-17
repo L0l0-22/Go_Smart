@@ -1,5 +1,5 @@
 import React from 'react';
-import we from "../assets/we.png";
+import we from "../assets/we.svg";
 import docker from "../assets/docker.png";
 import python from "../assets/python.png";
 import flutter from "../assets/flutter.png";
@@ -35,7 +35,7 @@ export default function Technologies() {
           <h2 className="text-2xl xl:text-5xl font-bold text-center">
             <span className='flex items-center '>
               Technologies   
-              <img src={we} alt="Go Smart we" className='mx-3 w-14 md:w-20 '/> 
+              <img src={we} alt="Go Smart we" className='mx-3 w-14 md:w-20 object-contain'/> 
               Master
             </span>
           </h2>

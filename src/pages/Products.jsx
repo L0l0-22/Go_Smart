@@ -217,9 +217,8 @@ export default function Products() {
         <Modal
           isOpen={isModalOpen}
           onRequestClose={closeModal}
-          className="Modal max-w-7xl mx-auto w-full "
+          className="Modal max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto w-full h-fit overflow-scroll"
           overlayClassName="Overlay"
-
         >
           <style>
             {`
@@ -234,6 +233,8 @@ export default function Products() {
                 transform: translate(-50%, -50%); 
                 z-index: 1000;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                max-height: 90vh;
+                overflow-y: auto;
               }
 
               .Overlay {
@@ -256,8 +257,8 @@ export default function Products() {
               <IoClose size={22} />
             </button>
           </div>
-          <div className='flex items-center'>
-            <table className="mt-6 w-full table-auto border ">
+          <div className='flex flex-col lg:flex-row items-center'>
+            <table className="mt-6 w-full table-auto border lg:w-1/2">
               <tbody>
                 {/* Header Row (First Row) */}
                 <tr className="bg-main text-white">
@@ -309,7 +310,7 @@ export default function Products() {
             <img
               src={selectedProduct.specs.image}
               alt={`slide`}
-              className="h-[450px] w-full object-contain z-30"
+              className="h-[450px] w-full object-contain z-30 lg:w-1/2"
             /> 
           </div>
 

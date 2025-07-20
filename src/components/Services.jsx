@@ -35,9 +35,8 @@ export default function Services() {
                 <img src={service1} alt="Go Smart serviece 1"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Mobile Apps</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We Specialize in Developing Mobile Apps, Delivering Tailored Solutions That Enhance User Experience, 
-                      Engagement And Business Efficiency.
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      We develop custom mobile applications for Android and iOS, focusing on seamless user experience, high performance, and tailored functionality to support business growth and customer engagement across all devices.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -48,8 +47,8 @@ export default function Services() {
                 <img src={service2} alt="Go Smart serviece 2"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Website</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      We build responsive and dynamic websites that combine clean design with powerful functionality, ensuring a strong online presence and delivering user-friendly experiences that align with your business objectives.                    
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -60,8 +59,9 @@ export default function Services() {
                 <img src={service3} alt="Go Smart serviece 3"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Computer Vision</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We provide advanced computer vision solutions, leveraging innovative technologies to address our clients’ diverse needs.                    </p>
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      We offer advanced computer vision solutions that leverage deep learning and AI to analyze images and video, supporting industries like healthcare, retail, and security with smart automation and data insights.           
+                    </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
                     <img src={ser3}/>
@@ -71,8 +71,8 @@ export default function Services() {
                 <img src={service4} alt="Go Smart serviece 4"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Docker & Pods & Containers</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      We provide containerization solutions using Docker and Kubernetes to help teams deploy applications faster, scale efficiently, and maintain consistent environments across cloud, on-premise, and hybrid infrastructures.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -83,8 +83,8 @@ export default function Services() {
                 <img src={service5} alt="Go Smart serviece 5"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Full Stack</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      Our full-stack development services include frontend and backend solutions using modern technologies, enabling you to build scalable web applications with optimized performance and seamless user interactions across platforms.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">
@@ -95,8 +95,8 @@ export default function Services() {
                 <img src={service6} alt="Go Smart serviece 6"/>
                 <div className="mt-5">
                     <h3 className="font-semibold text-2xl mb-3">Machine Learning</h3>
-                    <p className="text-base font-normal leading-[1.9rem] md:max-w-xs max-w-full text-gray-500">
-                      We specialize in developing dynamic and responsive websites, combining creativity and functionality to enhance our customers’ online presence and meet their needs.
+                    <p className="text-base font-normal leading-[1.9rem] md:max-w-md max-w-full text-gray-500">
+                      We design machine learning models tailored to your business goals, allowing you to automate processes, gain predictive insights, and enhance decision-making through intelligent data-driven systems and AI innovation.
                     </p>
                 </div>
                 <div className="absolute bottom-0 right-0">

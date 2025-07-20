@@ -88,7 +88,7 @@ export default function Footer() {
                 </div>                <div>
                   <p className="font-medium">Reach Us</p>
                   <p>
-                    16A/4 El-Laselky Division, <br />
+                    16A/4 El-Laselky Division,
                     New Maadi, Cairo, Egypt
                   </p>
                 </div>

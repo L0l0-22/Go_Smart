@@ -80,7 +80,7 @@ export default function MainSlider() {
                 Our Solutions
               </p>
               <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 text-center line-clamp-2 md:leading-[3.2rem] lg:leading-[4.2rem]">
-                We Providing It Solution For Your Business
+                Delivering IT Solutions That Drive Business Growth
               </h2>
               <Link to="/itsolutions" className="rounded-full border px-5 py-2 md:text-2xl flex items-center ">
                 Learn More

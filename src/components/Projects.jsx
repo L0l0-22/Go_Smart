@@ -1,8 +1,10 @@
 import React from 'react';
 import projects from "../assets/projects.png";
-import frame from "../assets/Frame 109.png";
 import { FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import equina from "../assets/Projects/Equin.png";
+import orderawy from "../assets/Projects/orderawy.png";
+import OmegaCare from "../assets/Projects/OmegaCare.png";
 
 export default function Projects() {
   return (
@@ -24,7 +26,6 @@ export default function Projects() {
           </span>
         </h2>
       </div>
-
       <h5 className="flex items-center justify-end xl:max-w-[90%] text-main font-medium text-base mt-5 xl:mt-0 cursor-pointer">
         <span className="bg-main rounded-full text-white p-2 mr-2">
           <FaArrowDown />
@@ -38,54 +39,48 @@ export default function Projects() {
         <div className="w-full sm:w-[90%] md:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10">
           <div>
             <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
-              Project Name
+              Equina
             </h3>
             <p className="text-sm font-normal leading-[150%] capitalize font-[Poppins] text-[#03030C4D] px-4 py-2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s...
+              ERP system and mobile app for horse clubs and lesson bookings.
             </p>
           </div>
-          <img src={frame} alt="Project visual" className="object-contain mx-auto w-full max-w-[300px]" />
+          <img src={equina} alt="equina" className="object-cover mx-auto w-full max-w-[400px] rounded-md" />
           <button className="w-full mt-6 rounded bg-[#000066] text-white text-base md:text-lg font-semibold px-4 py-3">
-            Mobile App & Website
+            Website & Mobile App
           </button>
         </div>
-
         {/* Middle Card */}
         <div className="w-full sm:w-[90%] md:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between xl:-mt-16 z-20">
           <div>
             <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
-              Project Name
+              OmegaCare
             </h3>
             <p className="text-sm font-normal leading-[150%] capitalize font-[Poppins] text-[#03030C4D] px-4 py-2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s...
+              CRM system for healthcare company integrated with WhatsApp messaging.
             </p>
           </div>
-          <img src={frame} alt="Project visual" className="object-contain mx-auto w-full max-w-[300px]" />
+          <img src={OmegaCare} alt="OmegaCare" className="object-cover mx-auto w-full max-w-[400px] rounded-md" />
           <button className="w-full mt-6 rounded bg-[#000066] text-white text-base md:text-lg font-semibold px-4 py-3">
-            Mobile App & Website
+            ERP
           </button>
         </div>
-
         {/* Third Card */}
         <div className="w-full sm:w-[90%] md:w-[406px] rounded-[24px] border border-gray-300 bg-white p-6 flex flex-col justify-between z-10">
           <div>
             <h3 className="text-[20px] md:text-[24px] font-bold capitalize leading-tight font-[Poppins] text-[#000066] px-4 py-2">
-              Project Name
+              Ordarawy Market
             </h3>
             <p className="text-sm font-normal leading-[150%] capitalize font-[Poppins] text-[#03030C4D] px-4 py-2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s...
+              Full grocery app with ERP, POS, and delivery applications integrated.
             </p>
           </div>
-          <img src={frame} alt="Project visual" className="object-contain mx-auto w-full max-w-[300px]" />
+          <img src={orderawy} alt="orderawy" className="object-cover mx-auto w-full max-w-[400px] rounded-md" />
           <button className="w-full mt-6 rounded bg-[#000066] text-white text-base md:text-lg font-semibold px-4 py-3">
-            Mobile App & Website
+            Mobile App
           </button>
         </div>
       </div>
-
       <Link to="/allprojects" className="flex items-center justify-end max-w-[90%] text-main font-medium text-xl underline underline-offset-2 cursor-pointer">
         See More
       </Link>

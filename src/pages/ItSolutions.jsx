@@ -21,7 +21,7 @@ export default function ItSolutions() {
               <div className='w-full lg:w-2/3 space-y-5 mb-10 lg:mt-5 md:ml-5'>
               <h3 className='text-main text-2xl md:text-4xl font-medium '>ERP SYSTEM</h3>
               <p className="text-base md:text-xl max-w-3xl font-normal text-gray-400 leading-[2rem] md:leading-[2rem]">
-                Streamline And Integrate Your Business Operations With Our Comprehensive ERP Solutions. Manage Finance, Inventory, Human Resources, And Supply Chains Efficiently, Ensuring Data Accuracy And Real-Time Insights. Our ERP Systems Enhance Productivity, Support Informed Decision-Making, And Drive Business Growth.
+                Streamline and integrate your business operations with our comprehensive ERP solutions. Manage finance, inventory, HR, and supply chains efficiently, ensuring data accuracy and real-time insights to support strategic decisions and scale growth across departments.
                </p>
                <div className='flex text-forth flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-14 text-sm md:text-base font-normal'>
                   <div className='space-y-3 '>
@@ -42,7 +42,6 @@ export default function ItSolutions() {
               <img src={erp1} alt="Go Smart erp"/>
             </div>
             </div>
-
             <div className="bg-white rounded-3xl px-6 py-12 lg:px-6 lg:py-6 flex flex-col lg:flex-row justify-between mt-5"
               style={{
                 boxShadow: '8px 8px 6px #DAE8FF' 
@@ -53,7 +52,7 @@ export default function ItSolutions() {
               <div className='w-full lg:w-2/3 space-y-5 mt-10 lg:mt-5 md:ml-5 lg:ml-0 lg:pl-16'>
               <h3 className='text-main text-2xl md:text-4xl font-medium '>LOGISTIC MANAGEMENT</h3>
               <p className="text-base md:text-xl max-w-3xl font-normal text-gray-400 leading-[2rem] md:leading-[2rem]">
-                Enhance Logistics Operations With Real-Time Tracking, Automated Workflows, And Route Optimization. Our System Ensures Seamless Coordination Of Shipments, Inventory, And Warehouse Management, Reducing Operational Costs And Improving Delivery Accuracy For Better Customer Satisfaction.
+                Enhance logistics operations with real-time tracking, automation, and route optimization. Our system coordinates shipments, manages warehouses, and improves delivery accuracy while reducing costs and supporting customer satisfaction across your logistics ecosystem.
                </p>
                <div className='flex text-forth flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-14 text-sm md:text-base font-normal'>
                   <div className='space-y-3 '>
@@ -71,7 +70,6 @@ export default function ItSolutions() {
                </div>
               </div>
             </div>
-
             <div className="bg-white rounded-3xl px-6 py-12 lg:px-6 lg:py-6 flex flex-col lg:flex-row justify-between mt-5"
               style={{
                 boxShadow: '8px 8px 6px #DAE8FF' 
@@ -79,7 +77,7 @@ export default function ItSolutions() {
               <div className='w-full lg:w-2/3 space-y-5 mb-10 lg:mt-5 lg:ml-5'>
               <h3 className='text-main text-2xl md:text-4xl font-medium '>HEALTHCARE</h3>
               <p className="text-base md:text-xl max-w-3xl font-normal text-gray-400 leading-[2rem] md:leading-[2rem]">
-                Improve Patient Care And Streamline Administrative Tasks With Our Healthcare Management Solutions. Features Include Appointment Scheduling, Electronic Health Records, Billing Management, And Reporting Tools. Enhance Operational Efficiency, Ensure Compliance, And Deliver Better Patient Experiences.
+                Improve patient care and simplify healthcare management with tools like EHR, scheduling, billing, and analytics. Our solution enhances operational efficiency, ensures data compliance, and empowers providers to deliver faster and more personalized medical services.
                </p>
                <div className='flex text-forth flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-14 text-sm md:text-base font-normal'>
                   <div className='space-y-3 '>
@@ -100,7 +98,6 @@ export default function ItSolutions() {
               <img src={health1} alt="Go Smart health"/>
             </div>
             </div>
-
             <div className="bg-white rounded-3xl px-6 py-12 lg:px-6 lg:py-6 flex flex-col lg:flex-row justify-between mt-5"
               style={{
                 boxShadow: '8px 8px 6px #DAE8FF' 
@@ -111,8 +108,8 @@ export default function ItSolutions() {
               <div className='w-full lg:w-2/3 space-y-5 mt-10 lg:mt-5 md:ml-5 lg:ml-0 lg:pl-16'>
               <h3 className='text-main text-2xl md:text-4xl font-medium '>REAL ESTATE</h3>
               <p className="text-base md:text-xl max-w-3xl font-normal text-gray-400 leading-[2rem] md:leading-[2rem]">
-                Simplify Property Management With Solutions Designed For Leasing, Sales, Maintenance, And Client Relationships. Our System Streamlines Operations, Improves Communication With Clients, And Provides Real-Time Insights, Ensuring Efficient Management Of Residential And Commercial Properties.
-               </p>
+                Streamline real estate operations with software designed for property sales, leasing, accounting, and marketing. Manage assets, improve communication with clients, and gain real-time insights to optimize both residential and commercial property portfolios.
+              </p>
                <div className='flex text-forth flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-14 text-sm md:text-base font-normal'>
                   <div className='space-y-3 '>
                     <p>Operations</p>
@@ -129,7 +126,6 @@ export default function ItSolutions() {
                </div>
               </div>
             </div>
-
             <div className="bg-white rounded-3xl px-6 py-12 lg:px-6 lg:py-6 flex flex-col lg:flex-row justify-between mt-5"
               style={{
                 boxShadow: '8px 8px 6px #DAE8FF' 
@@ -137,7 +133,7 @@ export default function ItSolutions() {
               <div className='w-full lg:w-2/3 space-y-5 mb-10 lg:mt-5 lg:ml-5'>
               <h3 className='text-main text-2xl md:text-4xl font-medium '>ERP RETAIL ... FOOD & BEVERAGE</h3>
               <p className="text-base md:text-xl max-w-3xl font-normal text-gray-400 leading-[2rem] md:leading-[2rem]">
-                Optimize Operations With Our All-In-One Software For Retail And F&B Businesses. Manage Inventory, Sales, And Customer Engagement Effortlessly. Our Solutions Feature Advanced POS Systems, Cloud Kitchen Management, Self-Ordering Kiosks, And Self-Service Technologies To Enhance Efficiency And Deliver Superior Customer Experiences.
+                Manage sales, inventory, and customer interactions seamlessly with our software for retail and F&B. Features include POS systems, cloud kitchen integration, self-ordering kiosks, and loyalty tools to enhance operations and deliver standout experiences.
                </p>
                <div className='flex text-forth flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-14 text-sm md:text-base font-normal'>
                   <div className='space-y-3 '>

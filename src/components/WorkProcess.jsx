@@ -85,8 +85,8 @@ export default function WorkProcess() {
                 <img src={process1} alt="Go Smart process 1" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Discover</h3>
-                  <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    We begin by thoroughly understanding your business needs and objectives to tailor the best software solution for you.
+                  <p className="text-base font-normal leading-[1.5rem] max-w-auto xl:max-w-44 text-gray-500">
+                    We start by understanding your business goals and challenges to craft a tailored software solution that fits your needs.
                   </p>
                 </div>
               </div>
@@ -99,8 +99,8 @@ export default function WorkProcess() {
                 <img src={process2} alt="Go Smart process 2" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Design</h3>
-                  <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Our expert designers create intuitive and user-friendly interfaces that ensure seamless user experiences.
+                  <p className="text-base font-normal leading-[1.5rem] max-w-auto xl:max-w-44 text-gray-500">
+                    We design intuitive, user-friendly interfaces that align with your brand and ensure a smooth and visually engaging experience.
                   </p>
                 </div>
               </div>
@@ -113,8 +113,8 @@ export default function WorkProcess() {
                 <img src={process3} alt="Go Smart process 3" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Develop</h3>
-                  <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Our developers build robust, scalable, and secure software applications using modern technologies.
+                  <p className="text-base font-normal leading-[1.5rem] max-w-auto xl:max-w-44 text-gray-500">
+                    We build scalable, secure applications using the latest technologies to ensure long-term performance and reliability.
                   </p>
                 </div>
               </div>
@@ -127,8 +127,8 @@ export default function WorkProcess() {
                 <img src={process4} alt="Go Smart process 4" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Deliver</h3>
-                  <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    We deliver and deploy your custom solution with thorough testing and quality assurance to ensure optimal performance.
+                  <p className="text-base font-normal leading-[1.5rem] max-w-auto xl:max-w-44 text-gray-500">
+                    We deploy your solution with thorough testing and quality assurance to guarantee smooth and error-free operation.
                   </p>
                 </div>
               </div>
@@ -141,8 +141,8 @@ export default function WorkProcess() {
                 <img src={process5} alt="Go Smart process 5" className='w-[72px] h-[72px]' />
                 <div className="mt-5">
                   <h3 className="font-bold text-2xl mb-3">Support</h3>
-                  <p className="text-base font-normal leading-[1.5rem] max-w-44 text-gray-500">
-                    Our dedicated support team provides ongoing assistance and maintenance to keep your software running smoothly.
+                  <p className="text-base font-normal leading-[1.5rem] max-w-auto xl:max-w-44 text-gray-500">
+                    We provide continuous support and maintenance to keep your software running efficiently as your business grows.
                   </p>
                 </div>
               </div>

@@ -1,6 +1,15 @@
 import React from 'react';
-import demo from "../assets/projectDemo2.mp4";
-import demoimg from "../assets/imgdemo.jpeg";
+import demoimg from "../assets/Projects/tasmem.png";
+import equina from "../assets/Projects/Equin.png";
+import diet from "../assets/Projects/diet.png";
+import lms from "../assets/Projects/lms.png";
+import contaqa from "../assets/Projects/contaqa.png";
+import orderawy from "../assets/Projects/orderawy.png";
+import classi from "../assets/Projects/classi.png";
+import Aida from "../assets/Projects/Aida.png";
+import CRM from "../assets/Projects/CRM.png";
+import tippy from "../assets/Projects/TIPPY.png";
+import OmegaCare from "../assets/Projects/OmegaCare.png";
 import logo1 from "../assets/workLogo.png";
 import logo2 from "../assets/workLogo2.png";
 import logoresp2 from "../assets/logoresp2.png";
@@ -8,25 +17,90 @@ import logoresp from "../assets/logoresp.png";
 
 export default function AllProjects() {
   const projects = [
-        {
-      name: "Project One",
+    {
+      name: "Equina",
       description:
-        "The second project focuses on eCommerce development and performance.",
-      img: demoimg,
+        "ERP system and mobile app for horse clubs and lesson bookings.",
+      img: equina,
+      buttonText: "Website & Mobile App",
+    },
+
+    {
+      name: "OmegaCare",
+      description:
+        "CRM system for healthcare company integrated with WhatsApp messaging.",
+      img: OmegaCare,
+      buttonText: "ERP",
+    },
+
+    {
+      name: "Ordarawy Market",
+      description:
+        "Full grocery app with ERP, POS, and delivery applications integrated.",
+      img: orderawy,
+      buttonText: "Mobile App",
+    },
+
+    {
+      name: "Diet To Door",
+      description:
+        "ERP system for meal production, medical plans, and delivery to customers.",
+      img: diet,
+      buttonText: "ERP",
+    },
+
+    {
+      name: "Aldiwan",
+      description:
+        "Real estate system for property management, pricing and installments.",
+      img: CRM,
+      buttonText: "ERP",
+    },
+
+    {
+      name: "LMS",
+      description:
+        "Educational platform for course browsing, subscriptions, and admin dashboard.",
+      img: lms,
       buttonText: "Website",
     },
     {
-      name: "Project Two",
+      name: "Tasmem",
       description:
-        "This is the first project showcasing modern UI and responsive design principles.",
-      video: demo,
-      buttonText: "Mobile App",
+        "Engineering consultancy app and website with built-in project coordination.",
+      img: demoimg,
+      buttonText: "Website & Mobile App",
     },
     {
-      name: "Project Three",
+      name: "Contaqa",
       description:
-        "The second project focuses on eCommerce development and performance.",
-      img: demoimg,
+        "Company website showcasing info, projects, and all contact details.",
+      img: contaqa,
+      buttonText: "Website",
+    },
+
+
+    {
+      name: "Classi",
+      description:
+        "ERP for furniture store managing inventory, sales, purchases, and customers.",
+      img: classi,
+      buttonText: "ERP",
+    },
+    {
+      name: "Aida",
+      description:
+        "Website for IT help desk services and comprehensive IT solutions.",
+      img: Aida,
+      buttonText: "Website",
+    },
+
+
+    {
+      name: "TippyTap",
+      description:
+        "Website for buying digital business, review, and deep linking cards.",
+      img: tippy,
       buttonText: "Website",
     },
   ];
@@ -62,23 +136,14 @@ export default function AllProjects() {
             </div>
 
             {/* Conditionally render video or image */}
-            <div className="px-4 py-2">
-              {project.video ? (
-                <video
-                  src={project.video}
-                  className="object-contain mx-auto w-full max-w-[300px] rounded-md"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                />
-              ) : (
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  className="object-cover mx-auto w-full max-w-[300px] rounded-md"
-                />
-              )}
+            <div className="">
+
+              <img
+                src={project.img}
+                alt={project.name}
+                className="object-cover mx-auto w-full max-w-[400px] rounded-md"
+              />
+
             </div>
 
             <button className="w-full mt-6 rounded bg-main hover:bg-[#000099] text-white text-base md:text-lg font-semibold px-4 py-3">

@@ -4,11 +4,7 @@ import logo2 from "../assets/workLogo2.png";
 import logoresp2 from "../assets/logoresp2.png";
 import logoresp from "../assets/logoresp.png";
 import DemoForm from '../Forms/DemoForm';
-
-
-
 export default function RequestDemo() {
-
   return (
     <div className="relative bg-[#F8FAFF] min-h-screen overflow-hidden">
       <div className="absolute left-0 top-[-50px] lg:top-[-1px] hidden md:block lg:h-full z-10">
@@ -34,12 +30,10 @@ export default function RequestDemo() {
           <p
             className="font-normal text-[18px] text-[#03030C4D]  "
           >
-            Experience how our ERP solution can transform your business! Book a 7-day demo now, select your preferred modules, and explore the benefits. With a variety of modules available, we can even customize them to suit your specific needs. See the difference firsthand!
+            Explore how our ERP solution transforms your operations with a 7-day demo. Select the modules that match your business, and we’ll tailor the experience to your needs. Discover streamlined workflows, increased visibility, and powerful tools—all in one platform.
           </p>
         </div>
-
         <DemoForm />
-
       </div>
 
 

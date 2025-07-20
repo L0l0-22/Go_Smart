@@ -5,10 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import slide1 from "../assets/slide1.png";
-import slide2 from "../assets/slide2.png";
-import slide3 from "../assets/slide3.png";
-import slide4 from "../assets/slide4.png";
 import kds from "../assets/PNG (1)/photos 5-0٥.png"
 import kds_screen from "../assets/pos screens/kds_screen.jpg"
 import pos_screen from "../assets/pos screens/pos_screen.jpg"
@@ -22,8 +18,9 @@ import pos from "../assets/PNG (1)/photos 5-0٢.png"
 import kiosk from "../assets/PNG (1)/photos 5-0٣.png"
 import SignageMenu from "../assets/PNG (1)/photos 5-0٤.png"
 import Selfcheckout from "../assets/PNG (1)/photos 5-0١.png"
-import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import { IoClose } from 'react-icons/io5';
+import { image } from 'framer-motion/client';
 
 export default function Products() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,13 +41,13 @@ export default function Products() {
         touchscreen: 'Yes',
         network: 'Ethernet, Wi-Fi',
         interface: 'USB, HDMI, Serial',
+        image: kds ,
       }
     },
     {
       title: 'POS',
       images: [pos, pos_screen],
       description: 'Our POS system offers a user-friendly interface, helping businesses manage sales, inventory, and customer data effortlessly. Boost your business efficiency with fast transactions and real-time updates.',
-
       specs: {
         model: 'POS 3000',
         resolution: '1920x1080',
@@ -62,30 +59,68 @@ export default function Products() {
         touchscreen: 'Yes',
         network: 'Ethernet, Wi-Fi',
         interface: 'USB, HDMI, Serial',
+        image: pos ,
       }
     },
     {
       title: 'Kiosk',
       images: [kiosk, kiosk_screen],
       description: 'Transform customer interaction with self-service kiosks that enhance the ordering process. Let your customers browse, order, and pay without any hassle, improving efficiency and reducing wait times.',
+      specs: {
+          model: 'POS 3000',
+          resolution: '1920x1080',
+          os: 'Windows 10',
+          motherboard: 'Asus Prime',
+          cpu: 'Intel Core i7-9700',
+          ddr: '16GB DDR4',
+          sdd: '512GB SSD',
+          touchscreen: 'Yes',
+          network: 'Ethernet, Wi-Fi',
+          interface: 'USB, HDMI, Serial',
+          image: kiosk ,
+          }
     },
     {
       title: 'Signage Menu',
       images: [SignageMenu, signage1, signage2, signage3, signage4],
       description: 'Our digital signage menus bring your restaurant offerings to life with high-quality displays. Easily update content and promotions, creating an engaging dining experience for your customers.',
+      specs: {
+        model: 'POS 3000',
+        resolution: '1920x1080',
+        os: 'Windows 10',
+        motherboard: 'Asus Prime',
+        cpu: 'Intel Core i7-9700',
+        ddr: '16GB DDR4',
+        sdd: '512GB SSD',
+        touchscreen: 'Yes',
+        network: 'Ethernet, Wi-Fi',
+        interface: 'USB, HDMI, Serial',
+        image: SignageMenu ,
+      }
     },
     {
       title: 'Selfcheckout',
       images: [Selfcheckout, splash],
       description: 'Our self-checkout solution enables customers to easily scan, pay, and go, reducing wait times and improving the checkout experience. Perfect for high-traffic stores looking to speed up transactions.',
+      specs: {
+        model: 'POS 3000',
+        resolution: '1920x1080',
+        os: 'Windows 10',
+        motherboard: 'Asus Prime',
+        cpu: 'Intel Core i7-9700',
+        ddr: '16GB DDR4',
+        sdd: '512GB SSD',
+        touchscreen: 'Yes',
+        network: 'Ethernet, Wi-Fi',
+        interface: 'USB, HDMI, Serial',
+        image: Selfcheckout ,
+      }
     },
   ];
-
   const openModal = (product) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
   };
-
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedProduct(null);
@@ -156,7 +191,8 @@ export default function Products() {
                           src={image}
                           alt={`slide ${idx + 1}`}
                           className="h-[450px] w-full object-contain z-30"
-                        />                      </div>
+                        />                      
+                        </div>
                     </SwiperSlide>
                   ))}
                 </Swiper>
@@ -181,99 +217,102 @@ export default function Products() {
         <Modal
           isOpen={isModalOpen}
           onRequestClose={closeModal}
-          className="Modal"
+          className="Modal max-w-7xl mx-auto w-full "
           overlayClassName="Overlay"
 
         >
-
           <style>
             {`
-.Modal {
-  background: white;
-  border: 2px solid #EFF0EC;
-  border-radius: 10px;
-  width: 500px;
-  max-width: 90%;
-  padding: 2rem;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  z-index: 1000;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+              .Modal {
+                background: white;
+                border: 2px solid #EFF0EC;
+                border-radius: 10px;
+                padding: 2rem;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+                z-index: 1000;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              }
 
-.Overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-}
+              .Overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 999;
+                background: rgba(0, 0, 0, 0.6);
+              }
+              `}
+          </style>
+          <div className='flex items-center justify-between'>
+            <h2 className="text-2xl font-bold text-main">{selectedProduct.title} Specifications</h2>
+            <button
+              onClick={closeModal}
+              className=" text-main bg-gray-100 p-2 rounded-full hover:bg-gray-200 "
+            >
+              <IoClose size={22} />
+            </button>
+          </div>
+          <div className='flex items-center'>
+            <table className="mt-6 w-full table-auto border ">
+              <tbody>
+                {/* Header Row (First Row) */}
+                <tr className="bg-main text-white">
+                  <td className="font-medium py-3 px-4 ">Model</td>
+                  <td className="font-medium py-3 px-4 ">{selectedProduct.specs.model}</td>
+                </tr>
+                {/* Row 2 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">Screen Resolution</td>
+                  <td className= "text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.resolution}</td>
+                </tr>
+                {/* Row 3 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">OS</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.os}</td>
+                </tr>
+                {/* Row 4 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">Motherboard / CPU</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.motherboard} / {selectedProduct.specs.cpu}</td>
+                </tr>
+                {/* Row 5 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">DDR</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.ddr}</td>
+                </tr>
+                {/* Row 6 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border  bg-main">SSD</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.sdd}</td>
+                </tr>
+                {/* Row 7 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border  bg-main">Touchscreen</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.touchscreen}</td>
+                </tr>
+                {/* Row 8 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">Network</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.network}</td>
+                </tr>
+                {/* Row 9 */}
+                <tr className="bg-white text-white">
+                  <td className="font-medium py-3 px-4 border bg-main">Interface</td>
+                  <td className="text-gray-500 py-3 px-4 border border-gray-300">{selectedProduct.specs.interface}</td>
+                </tr>
+              </tbody>
+            </table>
+            <img
+              src={selectedProduct.specs.image}
+              alt={`slide`}
+              className="h-[450px] w-full object-contain z-30"
+            /> 
+          </div>
 
-
-
-
-`}</style>
-
-          <h2 className="text-2xl font-bold text-blue-600">{selectedProduct.title} Specifications</h2>
-          <table className="mt-6 w-full table-auto border ">
-            <tbody>
-              {/* Header Row (First Row) */}
-              <tr className="bg-blue-600 text-white">
-                <td className="font-medium py-2 px-4 ">Model</td>
-                <td className="font-medium py-2 px-4 ">{selectedProduct.specs.model}</td>
-              </tr>
-              {/* Row 2 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">Screen Resolution</td>
-                <td className= "text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.resolution}</td>
-              </tr>
-              {/* Row 3 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">OS</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.os}</td>
-              </tr>
-              {/* Row 4 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">Motherboard / CPU</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.motherboard} / {selectedProduct.specs.cpu}</td>
-              </tr>
-              {/* Row 5 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">DDR</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.ddr}</td>
-              </tr>
-              {/* Row 6 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border  bg-blue-600">SSD</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.sdd}</td>
-              </tr>
-              {/* Row 7 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border  bg-blue-600">Touchscreen</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.touchscreen}</td>
-              </tr>
-              {/* Row 8 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">Network</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.network}</td>
-              </tr>
-              {/* Row 9 */}
-              <tr className="bg-white text-white">
-                <td className="font-medium py-2 px-4 border bg-blue-600">Interface</td>
-                <td className="text-gray-500 py-2 px-4 border border-gray-300">{selectedProduct.specs.interface}</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <button
-            onClick={closeModal}
-            className="mt-4 bg-blue-600 text-white py-2 px-4 rounded"
-          >
-            Close
-          </button>
         </Modal>
       )}
     </div>
